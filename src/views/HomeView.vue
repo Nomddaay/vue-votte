@@ -1,18 +1,11 @@
 <template>
-  <HelloWorld />
+  <v-app id="home">
+    <NavBar />
+  </v-app>
 </template>
 
-<script>
-import { defineComponent } from 'vue';
+<script setup>
+import NavBar from '@/components/NavBar.vue';
 
-// Components
-import HelloWorld from '../components/HelloWorld.vue';
 
-export default defineComponent({
-  name: 'HomeView',
-
-  components: {
-    HelloWorld,
-  },
-});
 </script>
